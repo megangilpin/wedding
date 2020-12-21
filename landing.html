@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Montserrat:wght@100;300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>M|M Wedding</title>
+    </head>
+    <body>
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source
+                    src="https://res.cloudinary.com/dalvnn7t2/video/upload/v1608427235/Wedding/FlintHills_jdlayy.mp4"
+                    type="video/mp4"
+                />
+                <source
+                    src="https://res.cloudinary.com/dalvnn7t2/video/upload/v1608428821/Wedding/FlintHills_wgo1h6.webm"
+                    type="video/webm"
+                />
+                Your browser is not supported!
+            </video>
+        </div>
+        <div class="password">
+            <form class="password__form">
+                <input
+                    class="password__input u-margin-right-small"
+                    type="text"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                />
+            </form>
+            <button class="solid" id="submit">Submit</button>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        const submitBtn = document.querySelector("#submit");
+
+        const handleLogin = (e) => {
+            e.preventDefault;
+
+            const password = document.getElementById("password");
+
+            if (password.value !== "") {
+                console.log("wrong password try again");
+            } else {
+                console.log("you got it");
+            }
+        };
+
+        submitBtn.addEventListener("click", handleLogin);
+    </script>
+</html>

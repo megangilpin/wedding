@@ -1,0 +1,224 @@
+/* SCSS HEX */
+/* SCSS Gradient */
+.bg-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.75;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.solid, .solid:link, .solid:visited {
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: inherit;
+  padding: 1rem;
+  display: inline-block;
+  color: #f7f6f4ff;
+  transition: all 0.3s;
+  position: relative;
+  border: none; }
+
+.solid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s; }
+
+.solid:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5); }
+
+.solid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2); }
+
+.solid:hover::after {
+  opacity: 1;
+  transform: scale(1, 1); }
+
+.solid:focus {
+  outline: none; }
+
+.solid:active {
+  /* in realted to initial linked state */
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+  outline: none; }
+
+.outline {
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  padding: 1.5em 3em;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #f7f6f4ff;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background 0.8s ease; }
+  .outline:hover {
+    background: rgba(100, 0, 0, 0.03); }
+  .outline__horizontal, .outline__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform 0.8s ease;
+    will-change: transform; }
+    .outline__horizontal::before, .outline__vertical::before {
+      content: "";
+      position: absolute;
+      border: inherit; }
+  .outline__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor; }
+    .outline__horizontal::before {
+      top: calc(var(--vertical-offset) - var(--border-size));
+      bottom: calc(var(--vertical-offset) - var(--border-size));
+      left: calc(var(--vertical-offset) * -1);
+      right: calc(var(--vertical-offset) * -1); }
+  .outline:hover .outline__horizontal {
+    transform: scaleX(0); }
+  .outline__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor; }
+    .outline__vertical::before {
+      top: calc(var(--horizontal-offset) * -1);
+      bottom: calc(var(--horizontal-offset) * -1);
+      left: calc(var(--horizontal-offset) - var(--border-size));
+      right: calc(var(--horizontal-offset) - var(--border-size)); }
+  .outline:hover .outline__vertical {
+    transform: scaleY(0); }
+  .outline:active, .outline:focus {
+    outline: none;
+    border: 1px;
+    background-color: #cbd2c6ff;
+    color: #707a67ff; }
+
+.password {
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(112, 122, 103, 0.6);
+  border-radius: 5px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .password__input {
+    padding: 1.5rem;
+    font-family: inherit;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background-color: #cbd2c6ff;
+    height: 2rem;
+    border-radius: 2px;
+    transition: all 0.3; }
+    .password__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      background-color: #f7f6f4ff;
+      color: rgba(20, 34, 7, 0.8); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+::selection {
+  background-color: #142207ff;
+  color: #f7f6f4ff; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-right-small {
+  margin-right: 1.5rem !important; }
+
+.header {
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513347/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_85_x0qxit.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; }

@@ -1,0 +1,47 @@
+// colors
+/* SCSS HEX */
+$cultured: #f7f6f4ff;
+$metallic-sunburst: #968653ff;
+$phthalo-green: #142207ff;
+$xanadu: #707a67ff;
+$ash-gray: #cbd2c6ff;
+$pewter-blue: #8ab1bcff;
+$alice-blue: #e4ebf0ff;
+$old-rose: #c0878dff;
+$lavender-blush: #eddddfff;
+
+/* SCSS Gradient */
+$background: linear-gradient(
+    90deg,
+    hsla(91, 66%, 8%, 1) 0%,
+    hsla(56, 33%, 33%, 1) 100%
+);
+
+// background: -moz-linear-gradient(90deg, hsla(91, 66%, 8%, 1) 0%, hsla(56, 33%, 33%, 1) 100%);
+
+// background: -webkit-linear-gradient(90deg, hsla(91, 66%, 8%, 1) 0%, hsla(56, 33%, 33%, 1) 100%);
+
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+//FONT
+$default-font-size: 1.6rem;
+$font-primary: "Cormorant Garamond", serif;
+$font-display: "Montserrat", sans-serif;
