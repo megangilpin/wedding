@@ -1,7 +1,52 @@
 .header {
-    height: 100vh;
     background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513347/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_85_x0qxit.jpg");
-    background-size: cover;
+    /* Full height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
-    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        height: 100%;
+        color: $cultured;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: -5rem;
+    }
+
+    &__name {
+        &--right {
+            margin-right: -5rem;
+        }
+        &--left {
+            margin-left: -5rem;
+        }
+    }
+
+    &__arrowBox {
+        height: 60px;
+        width: 50px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__arrow {
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        left: 5px;
+        position: absolute;
+        border-left: 2px solid $cultured;
+        border-bottom: 2px solid $cultured;
+        transform: rotate(-45deg);
+        animation: arrow 3s infinite;
+        -webkit-animation: wheel 3s infinite;
+    }
 }

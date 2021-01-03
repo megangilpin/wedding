@@ -19,7 +19,7 @@
 }
 
 .u-margin-bottom-medium {
-    margin-bottom: 4rem !important;
+    margin-bottom: 5rem !important;
 
     @include respond(tab-port) {
         margin-bottom: 3rem !important;
@@ -32,4 +32,12 @@
 
 .u-margin-right-small {
     margin-right: 1.5rem !important;
+}
+
+.u-margin-right-medium {
+    margin-right: 4rem !important;
+
+    @include respond(tab-port) {
+        margin-right: 3rem !important;
+    }
 }

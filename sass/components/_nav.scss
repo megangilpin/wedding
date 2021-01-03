@@ -1,0 +1,41 @@
+.nav {
+    height: 7rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cultured;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.8rem;
+            padding: 1rem 7rem;
+            color: $phthalo-green;
+            text-decoration: none;
+            // text-transform: uppercase;
+            letter-spacing: 2px;
+
+            @include respond(phone) {
+                font-size: 1.5rem;
+                padding: 1rem 5rem;
+                letter-spacing: inherit;
+            }
+        }
+        &:hover {
+            color: $metallic-sunburst;
+        }
+        &__selected {
+            color: $metallic-sunburst;
+        }
+    }
+}

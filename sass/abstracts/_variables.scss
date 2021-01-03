@@ -1,14 +1,16 @@
 // colors
 /* SCSS HEX */
-$cultured: #f7f6f4ff;
-$metallic-sunburst: #968653ff;
-$phthalo-green: #142207ff;
-$xanadu: #707a67ff;
-$ash-gray: #cbd2c6ff;
-$pewter-blue: #8ab1bcff;
-$alice-blue: #e4ebf0ff;
-$old-rose: #c0878dff;
-$lavender-blush: #eddddfff;
+$cultured: #fdfdfc;
+// $metallic-sunburst: #968653;
+$metallic-sunburst: #968670;
+$phthalo-green: #142207;
+$xanadu: #707a67;
+$ash-gray: #cbd2c6;
+$pewter-blue: #e4ebf0;
+$dark-blue: #2e5a79;
+$alice-blue: #e4ebf0;
+$old-rose: #c0878d;
+$lavender-blush: #eddddf;
 
 /* SCSS Gradient */
 $background: linear-gradient(
@@ -41,7 +43,14 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
+@font-face {
+    font-family: "Red Velvet Regular";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Red Velvet Regular"), url("../../assets/RedVelvet-Regular.woff");
+}
+
 //FONT
 $default-font-size: 1.6rem;
 $font-primary: "Cormorant Garamond", serif;
-$font-display: "Montserrat", sans-serif;
+$font-title: "Red Velvet Regular", serif;

@@ -1,0 +1,176 @@
+.details {
+    color: $metallic-sunburst;
+    padding: 10rem 0;
+
+    &__box {
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+
+    &__title {
+        margin-right: -2rem;
+    }
+
+    &__text {
+        flex: 1;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        flex: 1;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &--about {
+            background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513315/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_75_bwjitw.jpg");
+        }
+        &--where {
+            background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/co_rgb:ffffff,e_vibrance:20,z_1/v1609557405/Wedding/20200728_202122_bipazb.jpg");
+        }
+    }
+}
+
+.about {
+    &__underline {
+        border: 0.5px solid $metallic-sunburst;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: 2.7rem;
+        font-weight: 300;
+
+        span {
+            display: block;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__button {
+        color: $metallic-sunburst;
+
+        &:hover {
+            background: darken($cultured, $amount: 5%);
+        }
+    }
+}
+
+.when {
+    color: $dark-blue;
+    background-color: $alice-blue;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__underline {
+        border: 0.5px solid $dark-blue;
+        margin: 0 auto;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--subtitle {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__info {
+        height: 200px;
+        display: flex;
+        font-size: 1.8rem;
+    }
+
+    &__schedule {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        border-right: 2px solid $dark-blue;
+    }
+
+    &__day {
+        text-align: center;
+        line-height: 2.5rem;
+        &--title {
+            font-size: 2rem;
+        }
+    }
+
+    &__details {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        width: 70%;
+        text-align: center;
+    }
+
+    &__button {
+        color: $dark-blue;
+        margin-bottom: 2.8rem;
+        flex: 1;
+
+        &:hover {
+            background: darken($alice-blue, $amount: 5%);
+        }
+    }
+}
+
+.where {
+    &__underline {
+        border: 0.5px solid $metallic-sunburst;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: 2.7rem;
+        font-weight: 300;
+
+        &--subtitle {
+            font-size: 2rem;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__button {
+        color: $metallic-sunburst;
+        margin-bottom: 2.8rem;
+
+        &:hover {
+            background: darken($cultured, $amount: 5%);
+        }
+    }
+
+    &__map {
+        font-size: 1.8rem;
+        color: inherit;
+        margin: 0 auto;
+
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+}
