@@ -17,14 +17,14 @@
         />
         <link rel="stylesheet" href="css/style.css" />
 
-        <title>M|M Wedding in the Flint Hills</title>
+        <title>M|M Wedding</title>
     </head>
     <body>
         <nav class="nav">
             <ul class="nav__list u-margin-right-medium">
                 <li class="nav__item">
-                    <a class="nav__link" href="#">DETAILS</a>
-                    <a class="nav__link" href="#">OUR STORY</a>
+                    <a class="nav__link" href="#details">DETAILS</a>
+                    <a class="nav__link" href="#our-story">OUR STORY</a>
                 </li>
             </ul>
         </nav>
@@ -74,7 +74,7 @@
                 </p>
             </div>
         </div>
-        <div class="details">
+        <div class="details" id="details">
             <p class="heading-primary u-center-text u-margin-bottom-medium">
                 Details
             </p>
@@ -93,7 +93,10 @@
                         <span>&</span>
                         <span>Michael Byro</span>
                     </h4>
-                    <a class="outline about__button u-margin-bottom-medium">
+                    <a
+                        href="#our-story"
+                        class="outline about__button u-margin-bottom-medium"
+                    >
                         Our Story
                         <div class="outline__horizontal"></div>
                         <div class="outline__vertical"></div>
@@ -135,11 +138,29 @@
                                 course those wishing to only come for the
                                 ceremony is fine by us!
                             </p>
-                            <a class="outline when__button">
+                            <!-- <a class="outline when__button">
                                 Add To Calendar
-                                <div class="outline__horizontal"></div>
-                                <div class="outline__vertical"></div>
-                            </a>
+                                
+                            </a> -->
+                            <!-- AddEvent button -->
+                            <div
+                                title="Add to Calendar"
+                                class="addeventatc when__button"
+                                data-styling="none"
+                            >
+                                Add to Calendar
+                                <div class="addeventatc__horizontal"></div>
+                                <div class="addeventatc__vertical"></div>
+                                <span class="start">05/21/2021 05:00 pM</span>
+                                <span class="end">05/22/2021 11:00 AM</span>
+                                <span class="title"
+                                    >Megan and Mike's Wedding</span
+                                >
+                                <span class="location"
+                                    >826A US Highway 50 Elmdale, KS</span
+                                >
+                                <span class="all_day_event">false</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,27 +179,30 @@
                         <span class="where__text--subtitle">Elmdale, Ks</span>
                     </h4>
                     <a
-                        href="https://www.clovercliffranch.com/"
+                        href="https://www.google.com/maps/place/Clover+Cliff+Ranch/@38.3318399,-96.6990373,17z/data=!3m1!4b1!4m8!3m7!1s0x87bbf24e3de19b95:0x9583be68e40b1ffc!5m2!4m1!1i2!8m2!3d38.3318399!4d-96.6968433"
                         target="_blank"
                         class="outline where__button"
                     >
-                        Venue Site
+                        See Map
                         <div class="outline__horizontal"></div>
                         <div class="outline__vertical"></div>
                     </a>
                     <a
+                        href="https://www.clovercliffranch.com/"
                         href="https://www.google.com/maps/place/Clover+Cliff+Ranch/@38.3318399,-96.6990373,17z/data=!3m1!4b1!4m8!3m7!1s0x87bbf24e3de19b95:0x9583be68e40b1ffc!5m2!4m1!1i2!8m2!3d38.3318399!4d-96.6968433"
                         target="_blank"
                         class="where__map u-margin-bottom-small"
-                        >See On Map</a
+                        >Venue Site</a
                     >
                 </div>
             </div>
         </div>
-        <div class="story">
+        <div class="story" id="our-story">
             <p class="heading-primary u-center-text u-margin-bottom-medium">
                 Our Story
             </p>
+
+            <!-- Story -->
             <figure class="story__profile u-margin-bottom-medium">
                 <img
                     class="story__picture"
@@ -187,7 +211,7 @@
             </figure>
             <div class="story__text u-margin-bottom-medium">
                 <p class="u-center-text u-margin-bottom-small">
-                    We'll keep it short and sweet
+                    We'll keep it short and sweet.
                 </p>
                 <p class="u-center-text">
                     Megan grew up in Emporia, KS.
@@ -199,6 +223,8 @@
                     great outdoors helped create
                 </p>
             </div>
+
+            <!-- Carousel -->
             <h3 class="u-center-text u-margin-bottom-small">
                 Have a look at a few of our adventures through the years...
             </h3>
@@ -217,9 +243,9 @@
                         <div class="swiper-slide">Slide 2</div>
                         <div class="swiper-slide">Slide 3</div>
                     </div>
-                    <!-- Add Pagination -->
+                    <!-- Pagination -->
                     <div class="swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
+                    <!-- navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
