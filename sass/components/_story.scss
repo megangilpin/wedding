@@ -1,5 +1,21 @@
 .story {
     padding: 10rem 0;
-    height: 300px;
     font-size: 1.6rem;
+
+    &__picture {
+        display: block;
+        border-radius: 50%;
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border: 1rem solid $xanadu;
+    }
+
+    &__text {
+        width: 400px;
+        height: auto;
+        font-size: 1.8rem;
+        margin: 0 auto;
+    }
 }

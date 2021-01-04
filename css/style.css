@@ -90,6 +90,7 @@
   letter-spacing: 0.5rem;
   font-weight: 600;
   outline: none;
+  text-decoration: none;
   cursor: pointer;
   border-radius: 0;
   transition: background 0.8s ease; }
@@ -178,6 +179,7 @@
 .about__button {
   color: #968670; }
   .about__button:hover {
+    color: #968670;
     background: #f3f3ed; }
 
 .when {
@@ -226,6 +228,7 @@
     margin-bottom: 2.8rem;
     flex: 1; }
     .when__button:hover {
+      color: #2e5a79;
       background: #d4dfe7; }
 
 .where__underline {
@@ -246,6 +249,7 @@
   color: #968670;
   margin-bottom: 2.8rem; }
   .where__button:hover {
+    color: #968670;
     background: #f3f3ed; }
 
 .where__map {
@@ -260,7 +264,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,8 +321,40 @@
 
 .story {
   padding: 10rem 0;
-  height: 300px;
   font-size: 1.6rem; }
+  .story__picture {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 1rem solid #707a67; }
+  .story__text {
+    width: 400px;
+    height: auto;
+    font-size: 1.8rem;
+    margin: 0 auto; }
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: #fdfdfc; }
+
+.swiper-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover; }
+
+.swiper-button-prev {
+  color: #707a67; }
+
+.swiper-button-next {
+  color: #cbd2c6; }
+
+.swiper-pagination-bullet {
+  background-color: #707a67; }
 
 .welcome {
   font-size: 1.8rem;
@@ -327,12 +363,12 @@
 @keyframes arrow {
   to {
     opacity: 0;
-    top: 18px; } }
+    top: 25px; } }
 
 @-webkit-keyframes wheel {
   to {
     opacity: 0;
-    top: 18px; } }
+    top: 25px; } }
 
 *,
 *::after,
@@ -366,7 +402,7 @@ body {
 
 body {
   font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   color: #000; }
 

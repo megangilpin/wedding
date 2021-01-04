@@ -3,13 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://use.typekit.net/iwl7oin.css" />
-        <link rel="stylesheet" href="https://use.typekit.net/iwl7oin.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Montserrat:wght@100;300;400;500&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="css/style.css" />
+
         <title>M|M Wedding in the Flint Hills</title>
     </head>
     <body>
@@ -150,7 +157,11 @@
                         <span>Clover Cliff Ranch</span>
                         <span class="where__text--subtitle">Elmdale, Ks</span>
                     </h4>
-                    <a class="outline where__button">
+                    <a
+                        href="https://www.clovercliffranch.com/"
+                        target="_blank"
+                        class="outline where__button"
+                    >
                         Venue Site
                         <div class="outline__horizontal"></div>
                         <div class="outline__vertical"></div>
@@ -168,12 +179,78 @@
             <p class="heading-primary u-center-text u-margin-bottom-medium">
                 Our Story
             </p>
-            <p class="u-center-text">
-                We'll keep it short and sweet. Megan grew up in Emporia, Ks
-                while Mike grew up in South Jersey. We both found our way to New
-                York City and meet through mutual friends. Our shared love of
-                music, travel and the great outdoors helped to create
-            </p>
+            <figure class="story__profile u-margin-bottom-medium">
+                <img
+                    class="story__picture"
+                    src="https://res.cloudinary.com/dalvnn7t2/image/upload/v1609722956/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_91_ze7oys.jpg"
+                />
+            </figure>
+            <div class="story__text u-margin-bottom-medium">
+                <p class="u-center-text u-margin-bottom-small">
+                    We'll keep it short and sweet
+                </p>
+                <p class="u-center-text">
+                    Megan grew up in Emporia, KS.
+                    <br />
+                    Mike grew up in Southern New Jersey.
+                    <br />
+                    We found our way to New York City and meet through mutual
+                    friends in 2017. Our shared love of music, travel and the
+                    great outdoors helped create
+                </p>
+            </div>
+            <h3 class="u-center-text u-margin-bottom-small">
+                Have a look at a few of our adventures through the years...
+            </h3>
+            <div class="work story__carousel">
+                <!-- Slider main container -->
+                <div class="work swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img
+                                class="swiper-image"
+                                src="https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513406/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_89_bbqo5w.jpg"
+                            />
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </div>
+
+        <!-- Swiper Carousel -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Add to Calendar Button-->
+        <script
+            type="text/javascript"
+            src="https://addevent.com/libs/atc/1.6.1/atc.min.js"
+            async
+            defer
+        ></script>
+
+        <script type="text/javascript">
+            var mySwiper = new Swiper(".swiper-container", {
+                // pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
     </body>
 </html>
