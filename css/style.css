@@ -94,6 +94,11 @@
   cursor: pointer;
   border-radius: 0;
   transition: background 0.8s ease; }
+  @media only screen and (max-width: 37.5em) {
+    .outline {
+      padding: 5px 7px;
+      --offset: 3px;
+      font-size: 1rem; } }
   .outline:hover {
     box-shadow: inset 0 0 0 var(--border-size) currentcolor; }
   .outline__horizontal, .outline__vertical {
@@ -323,10 +328,13 @@
 
 .details {
   color: #968670;
-  padding: 10rem 0rem; }
+  padding: 10rem 20rem; }
   .details__box {
     width: 100%;
     display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .details__box {
+        flex-direction: column; } }
   .details__text {
     height: auto;
     display: flex;
@@ -336,11 +344,26 @@
     .details__text--about {
       background-color: #ffffff;
       border: 1px solid #968670;
-      width: 45%; }
+      width: 40%; }
+      @media only screen and (max-width: 37.5em) {
+        .details__text--about {
+          flex: 1;
+          width: 100%;
+          padding: 3px;
+          border-left: none;
+          border-right: none;
+          order: 2; } }
     .details__text--where {
       background-color: #f7f6f2;
       width: 35%;
       border: 1px solid #968670; }
+      @media only screen and (max-width: 37.5em) {
+        .details__text--where {
+          flex: 1;
+          width: 100%;
+          padding: 3px;
+          border-left: none;
+          border-right: none; } }
   .details__image {
     flex: 1;
     height: 100%;
@@ -354,6 +377,15 @@
 
 .about {
   height: 400px; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      height: 375px; } }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      height: 300px; } }
+  @media only screen and (min-width: 112.5em) {
+    .about {
+      height: 600px; } }
   .about__underline {
     background-color: #968670;
     height: 1px;
@@ -362,10 +394,17 @@
   .about__text {
     font-size: 2.5rem;
     font-weight: 300; }
+    @media only screen and (max-width: 37.5em) {
+      .about__text {
+        font-size: 1.8rem; } }
     .about__text span {
       display: block;
       text-align: center;
       letter-spacing: 1px; }
+      @media only screen and (max-width: 37.5em) {
+        .about__text span {
+          display: inline-block;
+          padding: 0 3px 3px 3px; } }
   .about__button {
     color: #968670; }
     .about__button:hover {
@@ -379,6 +418,9 @@
   background-color: #ffffff;
   border-bottom: 1px solid #968670;
   height: 425px; }
+  @media only screen and (min-width: 112.5em) {
+    .when {
+      height: 575px; } }
   .when__underline {
     border: 0.5px solid #2e5a79;
     margin: 0 auto; }
@@ -434,6 +476,12 @@
 .where {
   height: 550px;
   color: #2e5a79; }
+  @media only screen and (max-width: 56.25em) {
+    .where {
+      height: 400px; } }
+  @media only screen and (min-width: 112.5em) {
+    .where {
+      height: 700px; } }
   .where__underline {
     border: 0.5px solid #968670;
     margin: 0 auto; }
@@ -526,6 +574,8 @@
 .story {
   padding: 10rem 0;
   font-size: 1.6rem; }
+  .story__heading {
+    margin-right: -5rem; }
   .story__picture {
     display: block;
     border-radius: 50%;
@@ -546,11 +596,27 @@
   height: 400px;
   border-radius: 5px;
   background-color: #fdfcf8; }
+  @media only screen and (max-width: 37.5em) {
+    .swiper-container {
+      width: 100vw;
+      height: 300px; } }
+  @media only screen and (min-width: 112.5em) {
+    .swiper-container {
+      width: 800px;
+      height: 500px; } }
 
 .swiper-image {
   width: 600px;
   height: 400px;
   object-fit: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .swiper-image {
+      width: 100vw;
+      height: 300px; } }
+  @media only screen and (min-width: 112.5em) {
+    .swiper-image {
+      width: 800px;
+      height: 500px; } }
 
 .swiper-button-prev {
   color: #707a67; }
@@ -596,7 +662,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #fdfcf8; }
+  background-color: #fdfcf8;
+  overflow-x: hidden; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -616,6 +683,12 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary {
+      letter-spacing: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      letter-spacing: 2rem; } }
 
 .heading-subtitle {
   font-size: 3.5rem;
@@ -650,6 +723,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 1rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -665,10 +741,18 @@ body {
 
 .footer {
   background-color: #142207;
-  height: 100px; }
+  color: #cbd2c6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.8rem;
+  height: 200px;
+  padding: 2rem; }
 
 .header {
-  background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513347/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_85_x0qxit.jpg");
+  background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1609823094/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_85_atpcuv.jpg");
   /* Full height */
   height: 100vh;
   /* Create the parallax scrolling effect */

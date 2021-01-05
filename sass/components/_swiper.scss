@@ -3,11 +3,27 @@
     height: 400px;
     border-radius: 5px;
     background-color: $cultured;
+    @include respond(phone) {
+        width: 100vw;
+        height: 300px;
+    }
+    @include respond(big-desktop) {
+        width: 800px;
+        height: 500px;
+    }
 }
 
 .swiper-image {
     width: 600px;
     height: 400px;
+    @include respond(phone) {
+        width: 100vw;
+        height: 300px;
+    }
+    @include respond(big-desktop) {
+        width: 800px;
+        height: 500px;
+    }
     object-fit: cover;
 }
 

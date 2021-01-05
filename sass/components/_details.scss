@@ -1,15 +1,14 @@
 .details {
     color: $metallic-sunburst;
-    padding: 10rem 0rem;
+    padding: 10rem 20rem;
 
     &__box {
         width: 100%;
         display: flex;
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
-
-    // &__title {
-    //     margin-right: -5rem;
-    // }
 
     &__text {
         height: auto;
@@ -21,13 +20,29 @@
         &--about {
             background-color: $color-white;
             border: 1px solid $metallic-sunburst;
-            width: 45%;
+
+            width: 40%;
+            @include respond(phone) {
+                flex: 1;
+                width: 100%;
+                padding: 3px;
+                border-left: none;
+                border-right: none;
+                order: 2;
+            }
         }
 
         &--where {
             background-color: $cultured-darker;
             width: 35%;
             border: 1px solid $metallic-sunburst;
+            @include respond(phone) {
+                flex: 1;
+                width: 100%;
+                padding: 3px;
+                border-left: none;
+                border-right: none;
+            }
         }
     }
 
@@ -50,6 +65,16 @@
 
 .about {
     height: 400px;
+    @include respond(phone) {
+        height: 375px;
+    }
+    @include respond(tab-port) {
+        height: 300px;
+    }
+    @include respond(big-desktop) {
+        height: 600px;
+    }
+
     &__underline {
         // border: 0.3px solid $metallic-sunburst;
         background-color: $metallic-sunburst;
@@ -61,11 +86,18 @@
     &__text {
         font-size: 2.5rem;
         font-weight: 300;
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
 
         span {
             display: block;
             text-align: center;
             letter-spacing: 1px;
+            @include respond(phone) {
+                display: inline-block;
+                padding: 0 3px 3px 3px;
+            }
         }
     }
 
@@ -86,6 +118,10 @@
     background-color: $color-white;
     border-bottom: 1px solid $metallic-sunburst;
     height: 425px;
+
+    @include respond(big-desktop) {
+        height: 575px;
+    }
 
     &__underline {
         border: 0.5px solid $dark-blue;
@@ -166,6 +202,12 @@
 
 .where {
     height: 550px;
+    @include respond(tab-port) {
+        height: 400px;
+    }
+    @include respond(big-desktop) {
+        height: 700px;
+    }
     color: $dark-blue;
 
     &__underline {

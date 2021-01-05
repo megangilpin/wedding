@@ -10,6 +10,12 @@ body {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 5rem;
+    @include respond(tab-port) {
+        letter-spacing: 4rem;
+    }
+    @include respond(phone) {
+        letter-spacing: 2rem;
+    }
 }
 
 .heading-subtitle {

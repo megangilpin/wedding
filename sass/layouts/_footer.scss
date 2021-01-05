@@ -1,8 +1,12 @@
 .footer {
-    color: $ash-grey;
     background-color: $phthalo-green;
-    height: 50rem;
+    color: $ash-gray;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.8rem;
+    height: 200px;
+    padding: 2rem;
 }

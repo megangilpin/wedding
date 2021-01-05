@@ -27,6 +27,7 @@ html {
 body {
     box-sizing: border-box;
     background-color: $cultured;
+    overflow-x: hidden;
 
     @include respond(tab-port) {
         padding: 0;
