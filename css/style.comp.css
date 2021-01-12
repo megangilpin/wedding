@@ -732,6 +732,9 @@ body {
   font-size: 15rem;
   font-weight: 400;
   font-style: normal; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary {
+      font-size: 13rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 7rem; } }
