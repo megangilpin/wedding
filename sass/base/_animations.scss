@@ -7,7 +7,7 @@
 
 @-webkit-keyframes wheel {
     to {
-        opacity: 0;
+        -webkit-opacity: 0;
         top: 25px;
     }
 }
