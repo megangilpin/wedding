@@ -1,17 +1,17 @@
 // colors
 /* SCSS HEX */
 $cultured: #fdfcf8;
-$cultured-darker: #f7f6f2;
+$cultured-darker: #e6e4e0;
 // $metallic-sunburst: #968653;
 $metallic-sunburst: #968670;
 $phthalo-green: #142207;
 $xanadu: #707a67;
 $ash-gray: #cbd2c6;
-$pewter-blue: #e4ebf0;
+$pewter-blue: #eff3f5;
 $dark-blue: #2e5a79;
 $alice-blue: #e4ebf0;
 $old-rose: #c0878d;
-$lavender-blush: #eddddf;
+$lavender-blush: #fbf4f4;
 
 /* SCSS Gradient */
 $background: linear-gradient(
@@ -34,8 +34,8 @@ $color-secondary-dark: #ff7730;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+$color-grey-light-1: #676f78;
+$color-grey-light-2: #f8f8f8;
 
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
@@ -54,4 +54,5 @@ $color-black: #000;
 //FONT
 $default-font-size: 1.6rem;
 $font-primary: "Cormorant Garamond", serif;
-$font-title: "Red Velvet Regular", serif;
+// $font-title: "Red Velvet Regular", serif;
+$font-title: "p22-allyson-pro", sans-serif;

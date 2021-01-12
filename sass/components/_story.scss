@@ -3,7 +3,8 @@
     font-size: 1.6rem;
 
     &__heading {
-        margin-right: -5rem;
+        @include respond(phone) {
+        }
     }
 
     &__picture {
@@ -18,6 +19,9 @@
 
     &__text {
         width: 400px;
+        @include respond(phone) {
+            width: 300px;
+        }
         height: auto;
         font-size: 1.8rem;
         margin: 0 auto;

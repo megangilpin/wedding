@@ -18,16 +18,13 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-right: -5rem;
+        @include respond(phone) {
+            margin-right: 0rem;
+            position: relative;
+        }
     }
 
     &__name {
-        &--right {
-            margin-right: -5rem;
-        }
-        &--left {
-            margin-left: -5rem;
-        }
     }
 
     &__arrowBox {

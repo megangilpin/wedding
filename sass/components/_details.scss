@@ -1,6 +1,9 @@
 .details {
     color: $metallic-sunburst;
-    padding: 10rem 20rem;
+    padding: 10rem 0;
+    @include respond(big-desktop) {
+        padding: 10rem 20rem;
+    }
 
     &__box {
         width: 100%;
@@ -39,7 +42,7 @@
             @include respond(phone) {
                 flex: 1;
                 width: 100%;
-                padding: 3px;
+                padding: 20px;
                 border-left: none;
                 border-right: none;
             }
@@ -67,6 +70,7 @@
     height: 400px;
     @include respond(phone) {
         height: 375px;
+        position: relative;
     }
     @include respond(tab-port) {
         height: 300px;
@@ -113,14 +117,21 @@
 
 .when {
     color: $metallic-sunburst;
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: $color-white;
     border-bottom: 1px solid $metallic-sunburst;
-    height: 425px;
+    height: 450px;
 
+    @include respond(phone) {
+        height: 435px;
+        position: relative;
+    }
     @include respond(big-desktop) {
         height: 575px;
+        border: 1px solid $metallic-sunburst;
+        border-top: none;
     }
 
     &__underline {
@@ -128,11 +139,12 @@
         margin: 0 auto;
     }
 
-    &__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    &__title-box {
+        text-align: center;
+        margin-bottom: 9rem;
+        @include respond(phone) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__secondary-title {
@@ -142,7 +154,9 @@
     &__info {
         display: flex;
         font-size: 1.6rem;
-        height: 250px;
+        @include respond(phone) {
+            flex-wrap: wrap;
+        }
     }
 
     &__schedule {
@@ -153,6 +167,15 @@
         align-items: center;
         flex-direction: column;
         border-right: 2px solid lighten($metallic-sunburst, 30%);
+        @include respond(phone) {
+            flex: 1;
+            order: 2;
+            padding: 0 3px;
+        }
+    }
+
+    &__dates {
+        padding: 0 5px;
     }
 
     &__day {
@@ -170,10 +193,18 @@
         align-items: center;
         flex-direction: column;
         border-right: 2px solid lighten($metallic-sunburst, 30%);
+        @include respond(phone) {
+            flex: 0 0 100%;
+            border: none;
+            margin-bottom: 4rem;
+        }
     }
 
     &__subtitle {
         font-size: 4rem;
+        @include respond(phone) {
+            font-size: 3.5rem;
+        }
     }
 
     &__details {
@@ -182,6 +213,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include respond(phone) {
+            flex: 1;
+            order: 3;
+        }
     }
 
     &__text {
@@ -203,7 +238,7 @@
 .where {
     height: 550px;
     @include respond(tab-port) {
-        height: 400px;
+        height: 500px;
     }
     @include respond(big-desktop) {
         height: 700px;
@@ -234,6 +269,10 @@
         font-size: 1.5rem;
         text-align: left;
         padding: 0 3rem;
+        margin-bottom: 5rem;
+        @include respond(phone) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__button {
