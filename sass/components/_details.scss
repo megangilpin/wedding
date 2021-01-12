@@ -238,7 +238,7 @@
 .where {
     height: 550px;
     @include respond(tab-port) {
-        height: 500px;
+        height: 525px;
     }
     @include respond(big-desktop) {
         height: 700px;
