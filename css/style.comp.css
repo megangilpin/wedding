@@ -680,12 +680,12 @@
     .welcome {
       width: 100vw; } }
 
-@keyframes arrow {
+@keyframes wheel {
   to {
     opacity: 0;
     top: 25px; } }
 
-@-webkit-keyframes arrow {
+@-webkit-keyframes wheel {
   to {
     opacity: 0;
     top: 25px; } }
@@ -842,5 +842,5 @@ body {
     border-left: 2px solid #fdfcf8;
     border-bottom: 2px solid #fdfcf8;
     transform: rotate(-45deg);
-    animation: arrow 3s infinite;
+    animation: wheel 3s infinite;
     -webkit-animation: wheel 3s infinite; }
