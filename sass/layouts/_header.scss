@@ -45,5 +45,6 @@
         transform: rotate(-45deg);
         animation: wheel 3s infinite;
         -webkit-animation: wheel 3s infinite;
+        -moz-animation: wheel 3s infinite;
     }
 }
