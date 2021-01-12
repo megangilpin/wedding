@@ -123,7 +123,6 @@
     background-color: $color-white;
     border-bottom: 1px solid $metallic-sunburst;
     height: 450px;
-    padding: 1rem;
 
     @include respond(phone) {
         height: 435px;
@@ -238,9 +237,9 @@
 
 .where {
     height: 550px;
-    @include respond(tab-port) {
-        height: 525px;
-    }
+    // @include respond(tab-port) {
+    //     height: 525px;
+    // }
     @include respond(big-desktop) {
         height: 700px;
     }
