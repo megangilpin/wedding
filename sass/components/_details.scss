@@ -243,6 +243,9 @@
     @include respond(big-desktop) {
         height: 700px;
     }
+    @include respond(phone) {
+        height: 600px;
+    }
     color: $dark-blue;
 
     &__underline {
