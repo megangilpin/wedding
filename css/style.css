@@ -665,7 +665,7 @@
   @media only screen and (max-width: 56.25em) {
     .welcome {
       width: 100vw;
-      font-size: 2rem; } }
+      font-size: 2.5rem; } }
   .welcome__title {
     font-size: 3.5rem;
     font-weight: 500; }
@@ -804,7 +804,6 @@ body {
   background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1609823094/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_85_atpcuv.jpg");
   /* Full height */
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   /* Create the parallax scrolling effect */
   background-attachment: scroll;
   background-position: center;
