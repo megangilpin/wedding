@@ -666,6 +666,12 @@
     .welcome {
       width: 100vw;
       font-size: 2rem; } }
+  .welcome__title {
+    font-size: 3.5rem;
+    font-weight: 500; }
+    @media only screen and (max-width: 37.5em) {
+      .welcome__title {
+        font-size: 2.5rem; } }
 
 @keyframes wheel {
   to {
@@ -685,7 +691,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: -webkit-fill-available; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -699,7 +706,10 @@ html {
 body {
   box-sizing: border-box;
   background-color: #fdfcf8;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -727,7 +737,7 @@ body {
       font-size: 7rem; } }
 
 .heading-subtitle {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500; }
   @media only screen and (max-width: 37.5em) {
     .heading-subtitle {
@@ -794,6 +804,7 @@ body {
   background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1609823094/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_85_atpcuv.jpg");
   /* Full height */
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   /* Create the parallax scrolling effect */
   background-attachment: scroll;
   background-position: center;

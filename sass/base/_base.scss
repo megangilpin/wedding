@@ -22,12 +22,16 @@ html {
     @include respond(big-desktop) {
         font-size: 75%; //1rem = 12, 12/16
     }
+    height: -webkit-fill-available;
 }
 
 body {
     box-sizing: border-box;
     background-color: $cultured;
     overflow-x: hidden;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 
     @include respond(tab-port) {
         padding: 0;
