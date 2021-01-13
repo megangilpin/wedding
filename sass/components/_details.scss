@@ -39,10 +39,10 @@
             background-color: $cultured-darker;
             width: 35%;
             border: 1px solid $metallic-sunburst;
+            padding: 20px;
             @include respond(phone) {
                 flex: 1;
                 width: 100%;
-                padding: 20px;
                 border-left: none;
                 border-right: none;
             }
@@ -79,20 +79,13 @@
         height: 600px;
     }
 
-    &__underline {
-        // border: 0.3px solid $metallic-sunburst;
-        background-color: $metallic-sunburst;
-        height: 1px;
-        border: 0;
-        margin: 0 auto;
-    }
-
     &__text {
         font-size: 2.5rem;
         font-weight: 300;
-        @include respond(phone) {
-            font-size: 1.8rem;
-        }
+        // @include respond(phone) {
+        //     font-size: 2.5rem;
+        //     font-weight: 300;
+        // }
 
         span {
             display: block;
@@ -125,18 +118,13 @@
     height: 450px;
 
     @include respond(phone) {
-        height: 435px;
+        height: 500px;
         position: relative;
     }
     @include respond(big-desktop) {
         height: 575px;
         border: 1px solid $metallic-sunburst;
         border-top: none;
-    }
-
-    &__underline {
-        border: 0.5px solid $dark-blue;
-        margin: 0 auto;
     }
 
     &__title-box {
@@ -153,7 +141,7 @@
 
     &__info {
         display: flex;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         @include respond(phone) {
             flex-wrap: wrap;
         }

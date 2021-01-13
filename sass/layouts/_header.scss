@@ -20,11 +20,7 @@
         justify-content: flex-end;
         @include respond(phone) {
             margin-right: 0rem;
-            position: relative;
         }
-    }
-
-    &__name {
     }
 
     &__arrowBox {
