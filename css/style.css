@@ -387,8 +387,7 @@
   height: 400px; }
   @media only screen and (max-width: 37.5em) {
     .about {
-      height: 375px;
-      position: relative; } }
+      height: 375px; } }
   @media only screen and (max-width: 56.25em) {
     .about {
       height: 300px; } }
@@ -736,12 +735,9 @@ body {
 
 .heading-secondary {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 5px;
   text-transform: uppercase; }
-  @media only screen and (max-width: 37.5em) {
-    .heading-secondary {
-      letter-spacing: 0; } }
 
 .u-center-text {
   text-align: center !important; }

@@ -28,10 +28,7 @@ body {
 
 .heading-secondary {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 5px;
     text-transform: uppercase;
-    @include respond(phone) {
-        letter-spacing: 0;
-    }
 }
