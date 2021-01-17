@@ -30,6 +30,16 @@
         }
     }
 
+    &__amsp {
+        font-family: "p22-allyson-pro", sans-serif;
+        padding-right: 2rem;
+        margin-left: -2rem;
+        @include respond(phone) {
+            padding-right: 0;
+            margin-left: 0;
+        }
+    }
+
     &__arrowBox {
         height: 60px;
         width: 50px;

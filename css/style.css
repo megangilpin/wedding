@@ -1,9 +1,15 @@
 /* SCSS HEX */
 /* SCSS Gradient */
 @font-face {
+  font-family: "MonthGlade";
+  font-style: normal;
+  font-weight: 500;
+  src: local("MonthGlade"), url("../../assets/MonthGlade.otf"); }
+
+@font-face {
   font-family: "Red Velvet Regular";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   src: local("Red Velvet Regular"), url("../../assets/RedVelvet-Regular.woff"); }
 
 .bg-video {
@@ -337,6 +343,9 @@
   @media only screen and (min-width: 112.5em) {
     .details {
       padding: 10rem 20rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .details {
+      padding: 5rem 0; } }
   .details__box {
     width: 100%;
     display: flex; }
@@ -425,7 +434,7 @@
       position: relative; } }
   @media only screen and (min-width: 112.5em) {
     .when {
-      height: 575px;
+      height: 700px;
       border: 1px solid #867864;
       border-top: none; } }
   .when__title-box {
@@ -599,8 +608,11 @@
       color: rgba(20, 34, 7, 0.8); }
 
 .story {
-  padding: 10rem 0;
+  padding: 20rem 0;
   font-size: 1.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .story {
+      padding: 10rem 0; } }
   .story__picture {
     display: block;
     border-radius: 50%;
@@ -610,11 +622,13 @@
     object-fit: cover;
     border: 1rem solid #707a67; }
   .story__text {
-    width: 400px;
+    width: 700px;
     height: auto;
     font-size: 2.5rem;
-    margin: 0 auto;
-    margin-bottom: 20rem; }
+    margin: 0 auto; }
+    @media only screen and (max-width: 56.25em) {
+      .story__text {
+        width: 500px; } }
     @media only screen and (max-width: 37.5em) {
       .story__text {
         width: 300px;
@@ -658,7 +672,7 @@
 
 .welcome {
   font-size: 2.5rem;
-  width: 700px;
+  width: 975px;
   height: auto;
   margin: 0 auto;
   padding: 0 2rem; }
@@ -671,7 +685,8 @@
     font-weight: 500; }
     @media only screen and (max-width: 37.5em) {
       .welcome__title {
-        font-size: 2.5rem; } }
+        font-size: 4rem;
+        font-weight: 400; } }
 
 @keyframes wheel {
   to {
@@ -726,23 +741,40 @@ body {
   color: #000; }
 
 .heading-primary {
-  font-family: "p22-allyson-pro", sans-serif;
-  font-size: 15rem;
+  font-family: "MonthGlade";
+  font-size: 14rem;
   font-weight: 400;
   font-style: normal; }
+  @media only screen and (max-width: 75em) {
+    .heading-primary {
+      font-size: 12rem; } }
   @media only screen and (max-width: 56.25em) {
     .heading-primary {
-      font-size: 13rem; } }
+      font-size: 9rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 7rem; } }
 
+.heading-section {
+  font-family: "MonthGlade";
+  font-size: 12rem;
+  font-weight: 500;
+  font-style: normal; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-section {
+      font-size: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-section {
+      font-size: 6rem; } }
+
 .heading-subtitle {
-  font-size: 3.5rem;
-  font-weight: 500; }
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: -3rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-subtitle {
-      font-size: 2.5rem; } }
+      font-size: 2rem;
+      margin-top: -2rem; } }
 
 .heading-secondary {
   font-size: 3rem;
@@ -825,6 +857,14 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__title {
         margin-right: 0rem; } }
+  .header__amsp {
+    font-family: "p22-allyson-pro", sans-serif;
+    padding-right: 2rem;
+    margin-left: -2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__amsp {
+        padding-right: 0;
+        margin-left: 0; } }
   .header__arrowBox {
     height: 60px;
     width: 50px;

@@ -4,6 +4,9 @@
     @include respond(big-desktop) {
         padding: 10rem 20rem;
     }
+    @include respond(phone) {
+        padding: 5rem 0;
+    }
 
     &__box {
         width: 100%;
@@ -120,7 +123,7 @@
         position: relative;
     }
     @include respond(big-desktop) {
-        height: 575px;
+        height: 700px;
         border: 1px solid $metallic-sunburst;
         border-top: none;
     }

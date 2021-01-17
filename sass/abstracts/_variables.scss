@@ -35,9 +35,16 @@ $color-white: #ffffff;
 $color-black: #000;
 
 @font-face {
+    font-family: "MonthGlade";
+    font-style: normal;
+    font-weight: 500;
+    src: local("MonthGlade"), url("../../assets/MonthGlade.otf");
+}
+
+@font-face {
     font-family: "Red Velvet Regular";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     src: local("Red Velvet Regular"), url("../../assets/RedVelvet-Regular.woff");
 }
 
@@ -45,4 +52,5 @@ $color-black: #000;
 $default-font-size: 1.6rem;
 $font-primary: "adobe-garamond-pro", serif;
 // $font-title: "Red Velvet Regular", serif;
-$font-title: "p22-allyson-pro", sans-serif;
+// $font-title: "p22-allyson-pro", sans-serif;
+$font-title: "MonthGlade";
