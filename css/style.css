@@ -638,7 +638,8 @@
   width: 600px;
   height: 400px;
   border-radius: 5px;
-  background-color: #fdfcf8; }
+  background-color: #fdfcf8;
+  position: relative; }
   @media only screen and (max-width: 37.5em) {
     .swiper-container {
       width: 100vw;
@@ -660,6 +661,19 @@
     .swiper-image {
       width: 800px;
       height: 500px; } }
+
+.swiper-image__tall {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%; }
 
 .swiper-button-prev {
   color: #707a67; }
