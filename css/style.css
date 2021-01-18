@@ -870,7 +870,7 @@ body {
     justify-content: flex-end; }
     @media only screen and (max-width: 37.5em) {
       .header__title {
-        height: 65%; } }
+        height: 85%; } }
   .header__amsp {
     font-family: "p22-allyson-pro", sans-serif;
     padding-right: 2rem;
