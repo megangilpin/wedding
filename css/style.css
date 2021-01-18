@@ -870,7 +870,7 @@ body {
     justify-content: flex-end; }
     @media only screen and (max-width: 37.5em) {
       .header__title {
-        margin-right: 0rem; } }
+        height: 65%; } }
   .header__amsp {
     font-family: "p22-allyson-pro", sans-serif;
     padding-right: 2rem;
@@ -878,7 +878,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__amsp {
         padding-right: 0;
-        margin-left: 0; } }
+        margin-left: -1rem; } }
   .header__arrowBox {
     height: 60px;
     width: 50px;
