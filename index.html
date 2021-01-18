@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="css/style.css" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
 
         <title>M|M Wedding</title>
     </head>
@@ -32,7 +33,7 @@
                 </li>
             </ul>
         </nav>
-        <header class="header" id="parallax-container">
+        <header class="header jarallax" data-jarallax data-speed="0.2">
             <div class="header__title ">
                 <h3 class="heading-primary u-center-text">Megan 
                     <span class="header__amsp">&</span>
@@ -350,20 +351,10 @@
         ></script>
 
         <script type="text/javascript">
-            var background_image_parallax = function($object, multiplier){
-                multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-                multiplier = 1 - multiplier;
-                var $doc = $(document);
-                $object.css({"background-attatchment" : "fixed"});
-                $(window).scroll(function(){
-                    var from_top = $doc.scrollTop(),
-                        bg_css = '0px ' +(multiplier * from_top) + 'px';
-                    $object.css({"background-position" : bg_css });
-                });
-            };
 
-                //Just pass the jQuery object
-                background_image_parallax($(".header"));
+            jarallax(document.querySelectorAll('.jarallax'), {
+                speed: 0.2
+            });
 
             var mySwiper = new Swiper(".swiper-container", {
                 // pagination
