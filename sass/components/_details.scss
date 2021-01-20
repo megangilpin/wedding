@@ -1,289 +1,289 @@
 .details {
-    color: $metallic-sunburst;
-    padding: 10rem 0;
-    @include respond(big-desktop) {
-        padding: 10rem 20rem;
-    }
+  color: $metallic-sunburst;
+  padding: 10rem 0;
+  @include respond(big-desktop) {
+    padding: 10rem 20rem;
+  }
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
     @include respond(phone) {
-        padding: 5rem 0;
+      flex-direction: column;
     }
+  }
 
-    &__box {
-        width: 100%;
-        display: flex;
-        @include respond(phone) {
-            flex-direction: column;
-        }
-    }
-
-    &__text {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        &--about {
-            background-color: $color-white;
-            border: 1px solid $metallic-sunburst;
-            width: 40%;
-            @include respond(phone) {
-                flex: 1;
-                width: 100%;
-                padding: 3px;
-                border-left: none;
-                border-right: none;
-                order: 2;
-            }
-        }
-
-        &--where {
-            background-color: $cultured-darker;
-            width: 35%;
-            border: 1px solid $metallic-sunburst;
-            padding: 20px;
-            @include respond(phone) {
-                flex: 1;
-                width: 100%;
-                border-left: none;
-                border-right: none;
-            }
-        }
-    }
-
-    &__image {
-        flex: 1;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-        &--about {
-            background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513315/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_75_bwjitw.jpg");
-        }
-
-        &--where {
-            background-image: url("https://res.cloudinary.com/dalvnn7t2/image/upload/v1609810099/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_94_l7yey5.jpg");
-        }
-    }
-}
-
-.about {
-    height: 400px;
-    @include respond(phone) {
-        height: 375px;
-    }
-    @include respond(tab-port) {
-        height: 300px;
-    }
-    @include respond(big-desktop) {
-        height: 600px;
-    }
-
-    &__text {
-        font-size: 2.5rem;
-        font-weight: 300;
-        // @include respond(phone) {
-        //     font-size: 2.5rem;
-        //     font-weight: 300;
-        // }
-
-        span {
-            display: block;
-            text-align: center;
-            letter-spacing: 1px;
-            @include respond(phone) {
-                display: inline-block;
-                padding: 0 3px 3px 3px;
-            }
-        }
-    }
-
-    &__button {
-        color: $metallic-sunburst;
-
-        &:hover {
-            color: $metallic-sunburst;
-            background: lighten($metallic-sunburst, $amount: 40%);
-        }
-    }
-}
-
-.when {
-    color: $metallic-sunburst;
+  &__text {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $color-white;
-    border-bottom: 1px solid $metallic-sunburst;
-    height: 450px;
+    align-items: center;
 
+    &--about {
+      background-color: $color-white;
+      border: 1px solid $metallic-sunburst;
+      width: 40%;
+      @include respond(phone) {
+        flex: 1;
+        width: 100%;
+        padding: 3px;
+        border-left: none;
+        border-right: none;
+        order: 2;
+      }
+    }
+
+    &--where {
+      background-color: $cultured-darker;
+      width: 35%;
+      border: 1px solid $metallic-sunburst;
+      padding: 20px;
+      @include respond(phone) {
+        flex: 1;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+
+  &__image {
+    flex: 1;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--about {
+      background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513315/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_75_bwjitw.jpg');
+    }
+
+    &--where {
+      background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1609810099/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_94_l7yey5.jpg');
+    }
+  }
+}
+
+.about {
+  height: 400px;
+  @include respond(phone) {
+    height: 375px;
+  }
+  @include respond(tab-port) {
+    height: 300px;
+  }
+  @include respond(big-desktop) {
+    height: 600px;
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    // @include respond(phone) {
+    //     font-size: 2.5rem;
+    //     font-weight: 300;
+    // }
+
+    span {
+      display: block;
+      text-align: center;
+      letter-spacing: 1px;
+      @include respond(phone) {
+        display: inline-block;
+        padding: 0 3px 3px 3px;
+      }
+    }
+  }
+
+  &__button {
+    color: $metallic-sunburst;
+
+    &:hover {
+      color: $metallic-sunburst;
+      background: lighten($metallic-sunburst, $amount: 40%);
+    }
+  }
+}
+
+.when {
+  color: $metallic-sunburst;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-white;
+  border-bottom: 1px solid $metallic-sunburst;
+  height: 450px;
+
+  @include respond(phone) {
+    height: 500px;
+    position: relative;
+  }
+  @include respond(big-desktop) {
+    height: 700px;
+    border: 1px solid $metallic-sunburst;
+    border-top: none;
+  }
+
+  &__title-box {
+    text-align: center;
+    margin-bottom: 9rem;
     @include respond(phone) {
-        height: 500px;
-        position: relative;
+      margin-bottom: 1rem;
     }
-    @include respond(big-desktop) {
-        height: 700px;
-        border: 1px solid $metallic-sunburst;
-        border-top: none;
-    }
+  }
 
-    &__title-box {
-        text-align: center;
-        margin-bottom: 9rem;
-        @include respond(phone) {
-            margin-bottom: 1rem;
-        }
-    }
+  &__secondary-title {
+    font-size: 2rem;
+  }
 
-    &__secondary-title {
-        font-size: 2rem;
+  &__info {
+    display: flex;
+    font-size: 1.8rem;
+    @include respond(phone) {
+      flex-wrap: wrap;
     }
+  }
 
-    &__info {
-        display: flex;
-        font-size: 1.8rem;
-        @include respond(phone) {
-            flex-wrap: wrap;
-        }
+  &__schedule {
+    color: $dark-blue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid lighten($metallic-sunburst, 30%);
+    @include respond(phone) {
+      flex: 1;
+      order: 2;
+      padding: 0 3px;
     }
+  }
 
-    &__schedule {
-        color: $dark-blue;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-right: 2px solid lighten($metallic-sunburst, 30%);
-        @include respond(phone) {
-            flex: 1;
-            order: 2;
-            padding: 0 3px;
-        }
+  &__dates {
+    padding: 0 5px;
+  }
+
+  &__day {
+    text-align: center;
+    line-height: 2.5rem;
+    &--title {
+      font-size: 2rem;
     }
+  }
 
-    &__dates {
-        padding: 0 5px;
+  &__date {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 2px solid lighten($metallic-sunburst, 30%);
+    @include respond(phone) {
+      flex: 0 0 100%;
+      border: none;
+      margin-bottom: 4rem;
     }
+  }
 
-    &__day {
-        text-align: center;
-        line-height: 2.5rem;
-        &--title {
-            font-size: 2rem;
-        }
+  &__subtitle {
+    font-size: 4rem;
+    @include respond(phone) {
+      font-size: 3.5rem;
     }
+  }
 
-    &__date {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-right: 2px solid lighten($metallic-sunburst, 30%);
-        @include respond(phone) {
-            flex: 0 0 100%;
-            border: none;
-            margin-bottom: 4rem;
-        }
+  &__details {
+    color: $dark-blue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(phone) {
+      flex: 1;
+      order: 3;
     }
+  }
 
-    &__subtitle {
-        font-size: 4rem;
-        @include respond(phone) {
-            font-size: 3.5rem;
-        }
+  &__text {
+    width: 70%;
+    text-align: center;
+  }
+
+  &__button {
+    color: $metallic-sunburst;
+    margin-bottom: 2.8rem;
+
+    &:hover {
+      color: $metallic-sunburst;
+      background: lighten($metallic-sunburst, $amount: 40%);
     }
-
-    &__details {
-        color: $dark-blue;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include respond(phone) {
-            flex: 1;
-            order: 3;
-        }
-    }
-
-    &__text {
-        width: 70%;
-        text-align: center;
-    }
-
-    &__button {
-        color: $metallic-sunburst;
-        margin-bottom: 2.8rem;
-
-        &:hover {
-            color: $metallic-sunburst;
-            background: lighten($metallic-sunburst, $amount: 40%);
-        }
-    }
+  }
 }
 
 .where {
-    height: 550px;
-    // @include respond(tab-port) {
-    //     height: 525px;
-    // }
-    @include respond(big-desktop) {
-        height: 700px;
+  height: 550px;
+  // @include respond(tab-port) {
+  //     height: 525px;
+  // }
+  @include respond(big-desktop) {
+    height: 700px;
+  }
+  @include respond(phone) {
+    height: 650px;
+  }
+  color: $dark-blue;
+
+  &__underline {
+    border: 0.5px solid $metallic-sunburst;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    &--subtitle {
+      font-size: 2rem;
     }
+
+    span {
+      display: block;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 5rem;
     @include respond(phone) {
-        height: 600px;
+      margin-bottom: 1.5rem;
     }
+  }
+
+  &__button {
     color: $dark-blue;
+    margin-bottom: 2.8rem;
 
-    &__underline {
-        border: 0.5px solid $metallic-sunburst;
-        margin: 0 auto;
+    &:hover {
+      color: $dark-blue;
+      background: darken($alice-blue, $amount: 5%);
     }
+  }
 
-    &__title {
-        font-size: 2.5rem;
-        font-weight: 300;
+  &__map {
+    font-size: 1.8rem;
+    color: inherit;
+    margin: 0 auto;
 
-        &--subtitle {
-            font-size: 2rem;
-        }
-
-        span {
-            display: block;
-            text-align: center;
-            letter-spacing: 1px;
-        }
+    &:hover {
+      color: $dark-blue;
     }
-
-    &__text {
-        font-size: 1.8rem;
-        font-weight: 500;
-        text-align: left;
-        margin-bottom: 5rem;
-        @include respond(phone) {
-            margin-bottom: 1.5rem;
-        }
-    }
-
-    &__button {
-        color: $dark-blue;
-        margin-bottom: 2.8rem;
-
-        &:hover {
-            color: $dark-blue;
-            background: darken($alice-blue, $amount: 5%);
-        }
-    }
-
-    &__map {
-        font-size: 1.8rem;
-        color: inherit;
-        margin: 0 auto;
-
-        &:hover {
-            color: $dark-blue;
-        }
-    }
+  }
 }
