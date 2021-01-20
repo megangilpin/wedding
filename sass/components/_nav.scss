@@ -1,37 +1,37 @@
 .nav {
-    height: 7rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $cultured;
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+  height: 7rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $cultured;
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
 
-    &__list {
-        list-style-type: none;
+  &__list {
+    list-style-type: none;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.8rem;
+      padding: 1rem 7rem;
+      color: $phthalo-green;
+      text-decoration: none;
+
+      @include respond(phone) {
+        padding: 1rem 4rem;
+      }
     }
-
-    &__link {
-        &:link,
-        &:visited {
-            display: inline-block;
-            font-size: 1.8rem;
-            padding: 1rem 7rem;
-            color: $phthalo-green;
-            text-decoration: none;
-
-            @include respond(phone) {
-                padding: 1rem 5rem;
-            }
-        }
-        &:hover {
-            color: $metallic-sunburst;
-        }
-        &__selected {
-            color: $metallic-sunburst;
-        }
+    &:hover {
+      color: $metallic-sunburst;
     }
+    &__selected {
+      color: $metallic-sunburst;
+    }
+  }
 }
