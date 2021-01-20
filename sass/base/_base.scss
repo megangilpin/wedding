@@ -2,44 +2,45 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    // defines what 1rem is
-    font-size: 62.5%; // 1rem = 10px,  10px/16px(defualt) = 62.55
+  // defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px,  10px/16px(defualt) = 62.55
 
-    @include respond(tab-land) {
-        font-size: 56.25%; //1rem = 9px,  9/16 = 56.25;
-    }
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px,  9/16 = 56.25;
+  }
 
-    @include respond(tab-port) {
-        font-size: 50%; //1rem = 8px,  8/16 = 50%;
-    }
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px,  8/16 = 50%;
+  }
 
-    @include respond(big-desktop) {
-        font-size: 75%; //1rem = 12, 12/16
-    }
-    height: -webkit-fill-available;
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+  height: -webkit-fill-available;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: $cultured;
-    overflow-x: hidden;
-    min-height: 100vh;
-    /* mobile viewport bug fix */
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+  box-sizing: border-box;
+  background-color: $cultured;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 
-    @include respond(tab-port) {
-        padding: 0;
-    }
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 
 ::selection {
-    background-color: $phthalo-green;
-    color: $cultured;
+  background-color: $phthalo-green;
+  color: $cultured;
 }
