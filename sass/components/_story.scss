@@ -1,33 +1,34 @@
 .story {
-    padding: 20rem 0;
-    font-size: 1.6rem;
+  padding: 20rem 0;
+  font-size: 1.6rem;
 
-    &__heading {
-        @include respond(phone) {
-        }
+  &__heading {
+    @include respond(phone) {
     }
+  }
 
-    &__picture {
-        display: block;
-        border-radius: 50%;
-        margin: 0 auto;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        border: 1rem solid $xanadu;
-    }
+  &__picture {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 1rem solid $xanadu;
+  }
 
-    &__text {
-        width: 700px;
-        height: auto;
-        font-size: 2.5rem;
-        margin: 0 auto;
-        @include respond(tab-port) {
-            width: 500px;
-        }
-        @include respond(phone) {
-            width: 300px;
-            font-size: 2rem;
-        }
+  &__text {
+    width: 700px;
+    height: auto;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    @include respond(tab-port) {
+      width: 500px;
     }
+    @include respond(phone) {
+      width: auto;
+      font-size: 2rem;
+      padding: 0 3rem;
+    }
+  }
 }
