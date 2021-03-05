@@ -1,11 +1,11 @@
 .details {
   color: $metallic-sunburst;
-  padding: 10rem 0;
+  padding: 10rem 0 5rem 0;
   @include respond(big-desktop) {
     padding: 10rem 20rem;
   }
   @include respond(phone) {
-    padding: 5rem 0;
+    padding: 5rem 0 5rem 0;
   }
 
   &__box {
@@ -59,11 +59,16 @@
     background-size: cover;
 
     &--about {
+      border-top: 1px solid $metallic-sunburst;
+      border-right: 1px solid $metallic-sunburst;
       background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513315/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_75_bwjitw.jpg');
     }
 
     &--where {
-      background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1609810099/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_94_l7yey5.jpg');
+      border-bottom: 1px solid $metallic-sunburst;
+      border-left: 1px solid $metallic-sunburst;
+      // background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1609810099/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_94_l7yey5.jpg');
+      background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1614746842/Wedding/megan_venue2_rlktvy.png');
     }
   }
 }
@@ -116,7 +121,7 @@
   justify-content: center;
   background-color: $color-white;
   border-bottom: 1px solid $metallic-sunburst;
-  height: 450px;
+  height: 500px;
 
   @include respond(phone) {
     height: 500px;
@@ -130,7 +135,7 @@
 
   &__title-box {
     text-align: center;
-    margin-bottom: 9rem;
+    margin-bottom: 5rem;
     @include respond(phone) {
       margin-bottom: 1rem;
     }

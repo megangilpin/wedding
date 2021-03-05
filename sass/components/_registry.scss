@@ -1,0 +1,51 @@
+.registry {
+  display: flex;
+  height: 600px;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 0 5rem 0;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: $color-white;
+    width: 45%;
+    color: $metallic-sunburst;
+    border: 1px solid $metallic-sunburst;
+    @include respond(phone) {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  &__box {
+    flex: 1;
+    @include respond(phone) {
+      height: 300px;
+      order: 1;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    max-width: 500px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}

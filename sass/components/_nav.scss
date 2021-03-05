@@ -9,9 +9,20 @@
   align-items: center;
   background-color: $cultured;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+  @include respond(tab-land) {
+    justify-content: flex-end;
+  }
 
   &__list {
     list-style-type: none;
+    @include respond(tab-land) {
+      li {
+        margin-bottom: 2rem;
+      }
+      li:last-of-type {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   &__link {
@@ -33,5 +44,40 @@
     &__selected {
       color: $metallic-sunburst;
     }
+  }
+
+  &__burger {
+    font-size: 3rem;
+    display: none;
+    margin-right: 5rem;
+
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include respond(tab-land) {
+      background-color: $color-white;
+      position: absolute;
+      top: 63px;
+      right: -100%;
+      width: 300px;
+      height: calc(100vh - 63px);
+      min-height: 300px;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0;
+      transition: all 400ms;
+      padding-top: 2rem;
+    }
+  }
+
+  &__active {
+    right: 0;
   }
 }

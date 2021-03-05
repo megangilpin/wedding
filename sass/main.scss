@@ -1,19 +1,23 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "components/big-video";
-@import "components/button";
-@import "components/details";
-@import "components/nav";
-@import "components/password";
-@import "components/story";
-@import "components/swiper";
-@import "components/welcome";
+@import 'components/big-video';
+@import 'components/button';
+@import 'components/details';
+@import 'components/image';
+@import 'components/lodging';
+@import 'components/nav';
+@import 'components/password';
+@import 'components/registry';
+@import 'components/story';
+@import 'components/swiper';
+@import 'components/travel';
+@import 'components/welcome';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "layouts/footer";
-@import "layouts/header";
+@import 'layouts/footer';
+@import 'layouts/header';

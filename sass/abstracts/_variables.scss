@@ -10,14 +10,15 @@ $ash-gray: #cbd2c6;
 $pewter-blue: #eff3f5;
 $dark-blue: #284e69;
 $alice-blue: #e4ebf0;
+$blue: #c6d5df;
 $old-rose: #c0878d;
 $lavender-blush: #fbf4f4;
 
 /* SCSS Gradient */
 $background: linear-gradient(
-    90deg,
-    hsla(91, 66%, 8%, 1) 0%,
-    hsla(56, 33%, 33%, 1) 100%
+  90deg,
+  hsla(91, 66%, 8%, 1) 0%,
+  hsla(56, 33%, 33%, 1) 100%
 );
 
 // background: -moz-linear-gradient(90deg, hsla(91, 66%, 8%, 1) 0%, hsla(56, 33%, 33%, 1) 100%);
@@ -35,22 +36,22 @@ $color-white: #ffffff;
 $color-black: #000;
 
 @font-face {
-    font-family: "MonthGlade";
-    font-style: normal;
-    font-weight: 500;
-    src: local("MonthGlade"), url("../../assets/MonthGlade.otf");
+  font-family: 'MonthGlade';
+  font-style: normal;
+  font-weight: 500;
+  src: local('MonthGlade'), url('../../assets/MonthGlade.otf');
 }
 
 @font-face {
-    font-family: "Red Velvet Regular";
-    font-style: normal;
-    font-weight: 500;
-    src: local("Red Velvet Regular"), url("../../assets/RedVelvet-Regular.woff");
+  font-family: 'Red Velvet Regular';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Red Velvet Regular'), url('../../assets/RedVelvet-Regular.woff');
 }
 
 //FONT
 $default-font-size: 1.6rem;
-$font-primary: "adobe-garamond-pro", serif;
+$font-primary: 'adobe-garamond-pro', serif;
 // $font-title: "Red Velvet Regular", serif;
 // $font-title: "p22-allyson-pro", sans-serif;
-$font-title: "MonthGlade";
+$font-title: 'MonthGlade';

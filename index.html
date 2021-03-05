@@ -21,19 +21,28 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+        <script src="https://kit.fontawesome.com/f3e372d3d2.js" crossorigin="anonymous"></script>
 
         <title>M|M Wedding</title>
     </head>
     <body>
         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link" href="#details">DETAILS</a>
-                    <a class="nav__link" href="#our-story">OUR STORY</a>
-                </li>
-            </ul>
+            <div class="nav__side">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#details">DETAILS</a>
+                        <a class="nav__link" href="#travel">TRAVEL</a>
+                        <a class="nav__link" href="#lodging">LODGING</a>
+                        <a class="nav__link" href="#registry">REGISTRY</a>
+                        <a class="nav__link" href="#our-story">OUR STORY</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__burger">
+                <i class="fas fa-bars"></i>
+              </div>
         </nav>
-        <header class="header jarallax" data-jarallax data-speed="0.2">
+        <header class="header jarallax">
             <div class="header__title ">
                 <h3 class="heading-primary u-center-text">Megan 
                     <span class="header__amsp">&</span>
@@ -54,27 +63,26 @@
             <div
                 class="welcome__text u-margin-top-big u-center-text"
             >
-                <p class="u-margin-bottom-big">
-                    Everyone is invited to a weekend of dancing, drinks, and
-                    maybe a buffalo sighting or two.
-                    All the details you need to know about travel,
-                    accommodations and the exact schedule of events are coming
-                    soon!
+                <p class="u-margin-bottom-medium">
+                    Everyone is invited to a weekend of dancing, drinks, and maybe a buffalo sighting or two. The wedding will be held at the historic Clover Cliff Ranch. Set atop rolling tall grass prairies in the picturesque Flint Hills region. The working cattle ranch has been in operation since 1867, and the original homestead was built in 1860 from field stones on the property.
                 </p>
-                <p>
+                <p class="u-margin-bottom-medium">
+                    Located about 35 miles from Emporia, KS , Megan’s home town, we are excited to share one of our favorite places in the country. The Flint Hills. Be sure to take some time to explore the area or utilize some of the activities offered by Clover Cliff ranch.  
+                </p>
+                <p class="u-margin-bottom-small">
                     Your health and safety is our top priority. Please check
                     back closer to the wedding date for any safety precautions
                     due to COVID-19. If there is a change in date we will be
                     sure to reach out to everyone.
                 </p>
-                <p>
+                <p >
                     Have an urgent question? Email us at
                     megandmike2021@gmail.com
                 </p>
             </div>
         </div>
         <div class="details" id="details">
-            <h3 class="heading-section u-center-text">
+            <h3 class="heading-section u-center-text u-margin-bottom-medium">
                 Details
             </h3>
 
@@ -113,8 +121,11 @@
                         <span>Clover Cliff Ranch</span>
                         <span class="where__title--subtitle">Elmdale, Ks</span>
                     </h4>
-                    <p class="where__text">
+                    <!-- <p class="where__text">
                         The historic Clover Cliff Ranch is set atop rolling tall grass prairies in the picturesque Flint Hills region. The working cattle ranch has been in operation since 1867, and the original homestead was built in 1860 from field stones on the property.
+                    </p> -->
+                    <p class="where__text">
+                        All wedding events will be held at the ranch. 
                     </p>
                     <a
                         href="https://www.google.com/maps/place/Clover+Cliff+Ranch/@38.3318399,-96.6990373,17z/data=!3m1!4b1!4m8!3m7!1s0x87bbf24e3de19b95:0x9583be68e40b1ffc!5m2!4m1!1i2!8m2!3d38.3318399!4d-96.6968433"
@@ -148,7 +159,7 @@
                         <div class="when__dates">
                             <div class="when__day u-margin-bottom-small">
                                 <p class="when__day--title">5.21.21</p>
-                                <p>Welcome Dinner</p>
+                                <p>6:30 pm - Welcome Dinner</p>
                             </div>
                             <div class="when__day u-margin-bottom-small">
                                 <p class="when__day--title">5.22.21</p>
@@ -205,7 +216,141 @@
                 </div>
             </div>
         </div>
-
+        <div class="travel" id="travel"> 
+            <div class="travel__heading">
+                <h3 class="heading-section u-center-text u-margin-bottom-medium">
+                    Travel
+                </h3>
+            </div>
+            <div class="travel__info">
+                <div class="travel__type">
+                    <div class="travel__info-box">
+                        <div class="travel__icon u-margin-bottom-medium"><i class="icon fas fa-plane"></i></div>
+                        <h3 class="travel__title heading-secondary u-margin-bottom-small">By Plane</h3>
+                        <div class="plane__info">
+                            <p class="plane__info-main"> 
+                                For those traveling by plane, you can choose between two airports. We suggest renting a car once you arrive, as this is the cheapest option to and from the airport. However, car services are available.
+                            </p>
+                            <div class="u-margin-bottom-small">
+                                <h5 class="plane__title">Kansas City (KCI)</h5>
+                                <p>
+                                    The larger airport with more flights. If you have time to spare, we recommend spending an extra day or two in KC on your way in or out to take in the sights, culture, and food. It is about a 2.5 hours to the venue, but well worth the drive! Stop at Guy and Mae’s Tavern in Williamsburg, KS for some of Megan’s favorite BBQ along the way.
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="plane__title">Wichita Dwight D. Eisenhower National Airport (ICT)</h5>
+                                <p>
+                                    A smaller regional airport, but only about 1.25 hours from the venue. Delta, United, American and Southwest Airlines all offer flights to ICT.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel__type">
+                    <div class="travel__info-box">
+                        <div class="travel__icon u-margin-bottom-medium"><i class="icon fas fa-car"></i></div>
+                        <h3 class="travel__title heading-secondary u-margin-bottom-small">By Car</h3>
+                        <p>Clover Cliff Ranch is located approx. 3 miles southwest of Elmdale, KS on US-50 Hwy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="u-margin-bottom-medium">
+            <img class="cows" src="https://res.cloudinary.com/dalvnn7t2/image/upload/v1614746063/Wedding/buffalo_line_rgwknr.png" />
+        </div>
+        <div class="lodging" id="lodging"> 
+            <div class="lodging__heading">
+                <h3 class="heading-section u-center-text u-margin-bottom-medium">
+                    Lodging
+                </h3>
+            </div>
+            <div class="lodging__info">
+                <div class="lodging__type">
+                    <div class="lodging__info-box">
+                        <div class="lodging__icon u-margin-bottom-medium"><i class="icon fas fa-hotel"></i>
+                        </div>
+                        <h3 class="lodging__title heading-secondary u-margin-bottom-small">Hotels</h3>
+                        <div class="hotel__info">
+                            <p class="u-margin-bottom-small"> 
+                                Rooms have been blocked under the Gilpin/Byro wedding group at the below hotels in Emporia, KS. Please try to book by 4/23 in order to reserve a room under the block.
+                            </p>
+                            <p class="u-margin-bottom-small">
+                                Transportation to and from the venue will be provided for the day of the ceremony and reception (5/22).
+                            </p>
+                            <div class="u-margin-bottom-small">
+                                <h5 class="hotel__title">Holiday Inn Express</h5>
+                                <p>
+                                    3007 West 18th Avenue, Emporia, KS, 66801, US
+                                    <br>
+                                    620-343-1111
+                                    <br>
+                                    Code - GBY
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="hotel__title">La Quinta Inn and Suites</h5>
+                                <p>
+                                    2930 Eaglecrest Dr, Emporia, KS 66801 US
+                                    <br>
+                                    620-342-4445
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lodging__type">
+                    <div class="lodging__info-box">
+                        <div class="lodging__icon u-margin-bottom-medium"><i class="icon fab fa-airbnb"></i></div>
+                        <h3 class="lodging__title heading-secondary u-margin-bottom-small">Airbnb</h3>
+                        <div class="hotel__info">
+                            <p class="u-margin-bottom-small"> 
+                                There are quite a few amazing airbnb options around the area.  Search for options in Emporia, Elmdale, Cottonwood Falls and Strong City. This is a particularly fun option for groups traveling together. 
+                            </p>
+                            <p class="u-margin-bottom-small">
+                                Please let us know where you end up booking and we will work to get you transportation to and from the venue for the ceremony and reception.
+                            </p>
+                            <p class="u-margin-bottom-small">
+                                Here are a few of our favorite options that can be booked on Airbnb or the company website:
+                            </p>
+                            <div>
+                                <h5 class="hotel__title">
+                                    <a href="https://larkinnpropertymanagement.com/" target="_blank">The Lark Inn Guesthouses</a>
+                                   </h5>
+                                <p class="u-margin-bottom-small">
+                                    Selection of unique and recently renovated homes around Elmdale. 
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="hotel__title">
+                                    <a href="https://matfieldstation.com/" target="_blank">Matfield Station</a>
+                                   </h5>
+                                <p class="u-margin-bottom-small">
+                                    Landmark railroad bunkhouses transformed into apartment-style rooms surrounded by acres of prairie and art. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="registry" id="registry">
+            <div class="registry__info">
+                <h3 class="heading-secondary u-center-text u-margin-bottom-medium">
+                    Registry
+                </h3>
+                <div class="registry__text">
+                    <p class="u-margin-bottom-medium">The best present you could possibly give us is the celebration of our marriage. However, if you’d like to spoil us, we’ve picked out a few items, activities, and charities that pique our interests.</p>
+                    <a href="http://thkfl.com/megwedsmike.com" target="_blank" class="outline about__button u-center-text">
+                        Registry On Thankful
+                        <div class="outline__horizontal"></div>
+                        <div class="outline__vertical"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="registry__box">
+                <img  class="registry__image" src="https://res.cloudinary.com/dalvnn7t2/image/upload/v1609810099/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_94_l7yey5.jpg" />
+            </div>
+        </div>
         <div class="story" id="our-story">
             <div class="story__heading">
                 <h3 class="heading-section u-center-text u-margin-bottom-medium">
@@ -329,10 +474,6 @@
 
         <footer class="footer">
             <div class="footer_text">
-                <p class="u-margin-bottom-small"> 
-                    Don't forget to check back in for updates about travel,
-                    accommodations, the registry and the finalized schedule of events.
-                </p>
                 <h3>#megwedsmike</h3>
             </div>
                 <p class=>Photography by kindling.co</p>
@@ -352,8 +493,24 @@
 
         <script type="text/javascript">
 
+          // Responsive Nav
+            const burger = document.querySelector('.nav__burger i');
+            const nav = document.querySelector('.nav__side');
+
+            function toggleNav() {
+                console.log(nav);
+                burger.classList.toggle('fa-bars');
+                burger.classList.toggle('fa-times');
+                nav.classList.toggle('nav__active');
+            }
+
+            burger.addEventListener('click', function () {
+                console.log("clicked")
+                toggleNav();
+            });
+
             jarallax(document.querySelectorAll('.jarallax'), {
-                speed: 0.2
+                speed: .5
             });
 
             var mySwiper = new Swiper(".swiper-container", {
