@@ -61,12 +61,20 @@
     &--about {
       border-top: 1px solid $metallic-sunburst;
       border-right: 1px solid $metallic-sunburst;
+      @include respond(phone) {
+        border-bottom: none;
+        border-right: none;
+      }
       background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1608513315/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_75_bwjitw.jpg');
     }
 
     &--where {
       border-bottom: 1px solid $metallic-sunburst;
       border-left: 1px solid $metallic-sunburst;
+      @include respond(phone) {
+        border-bottom: none;
+        border-left: none;
+      }
       // background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1609810099/Wedding/Megan_MikeEngagementPhotos_KindlingWeddingPhotography_94_l7yey5.jpg');
       background-image: url('https://res.cloudinary.com/dalvnn7t2/image/upload/v1614746842/Wedding/megan_venue2_rlktvy.png');
     }
@@ -230,7 +238,7 @@
 }
 
 .where {
-  height: 550px;
+  height: 600px;
   // @include respond(tab-port) {
   //     height: 525px;
   // }
@@ -270,6 +278,10 @@
     @include respond(phone) {
       margin-bottom: 1.5rem;
     }
+  }
+
+  &__text-event {
+    margin-top: 1.5rem;
   }
 
   &__button {

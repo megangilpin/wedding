@@ -64,10 +64,7 @@
                 class="welcome__text u-margin-top-big u-center-text"
             >
                 <p class="u-margin-bottom-medium">
-                    Everyone is invited to a weekend of dancing, drinks, and maybe a buffalo sighting or two. The wedding will be held at the historic Clover Cliff Ranch. Set atop rolling tall grass prairies in the picturesque Flint Hills region. The working cattle ranch has been in operation since 1867, and the original homestead was built in 1860 from field stones on the property.
-                </p>
-                <p class="u-margin-bottom-medium">
-                    Located about 35 miles from Emporia, KS , Megan’s home town, we are excited to share one of our favorite places in the country. The Flint Hills. Be sure to take some time to explore the area or utilize some of the activities offered by Clover Cliff ranch.  
+                    Everyone is invited to a weekend of dancing, drinks, and maybe a buffalo sighting or two. The wedding will be held at the historic Clover Cliff Ranch, located about 35 miles from Emporia, KS, Megan’s home town, in one of our favorite places in the country — the Flint Hills. Be sure to take some time to explore the area and utilize some of the activities offered by Clover Cliff Ranch.
                 </p>
                 <p class="u-margin-bottom-small">
                     Your health and safety is our top priority. Please check
@@ -121,12 +118,15 @@
                         <span>Clover Cliff Ranch</span>
                         <span class="where__title--subtitle">Elmdale, Ks</span>
                     </h4>
-                    <!-- <p class="where__text">
-                        The historic Clover Cliff Ranch is set atop rolling tall grass prairies in the picturesque Flint Hills region. The working cattle ranch has been in operation since 1867, and the original homestead was built in 1860 from field stones on the property.
-                    </p> -->
-                    <p class="where__text">
-                        All wedding events will be held at the ranch. 
-                    </p>
+                    <div class="where__text">
+                        <p>
+
+                            The historic Clover Cliff Ranch is set atop rolling tall grass prairies in the picturesque Flint Hills region. The working cattle ranch has been in operation since 1867, and the original homestead was built in 1860 from field stones on the property.
+                        </p>
+                        <p class="where__text-event u-center-text">
+                            All wedding events will be held at the ranch. 
+                        </p>
+                    </div>
                     <a
                         href="https://www.google.com/maps/place/Clover+Cliff+Ranch/@38.3318399,-96.6990373,17z/data=!3m1!4b1!4m8!3m7!1s0x87bbf24e3de19b95:0x9583be68e40b1ffc!5m2!4m1!1i2!8m2!3d38.3318399!4d-96.6968433"
                         target="_blank"
@@ -353,7 +353,7 @@
         </div>
         <div class="story" id="our-story">
             <div class="story__heading">
-                <h3 class="heading-section u-center-text u-margin-bottom-medium">
+                <h3 class="heading-section u-center-text u-margin-bottom-big">
                     Our Story
                 </h3>
             </div>
@@ -496,16 +496,18 @@
           // Responsive Nav
             const burger = document.querySelector('.nav__burger i');
             const nav = document.querySelector('.nav__side');
-
+            let width = window.outerWidth;
+            console.log(width)
+            if(width < 1200){
+                console.log('width reached')
+            }
             function toggleNav() {
-                console.log(nav);
                 burger.classList.toggle('fa-bars');
                 burger.classList.toggle('fa-times');
                 nav.classList.toggle('nav__active');
             }
 
             burger.addEventListener('click', function () {
-                console.log("clicked")
                 toggleNav();
             });
 

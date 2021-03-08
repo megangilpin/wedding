@@ -4,6 +4,10 @@
   margin: 0 auto;
   display: block;
   margin-top: -8rem;
+  @include respond(phone) {
+    margin-top: 0rem;
+    width: 100%;
+  }
 }
 
 .fence {
