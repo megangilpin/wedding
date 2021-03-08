@@ -304,7 +304,7 @@
                         <h3 class="lodging__title heading-secondary u-margin-bottom-small">Airbnb</h3>
                         <div class="hotel__info">
                             <p class="u-margin-bottom-small"> 
-                                There are quite a few amazing airbnb options around the area.  Search for options in Emporia, Elmdale, Cottonwood Falls and Strong City. This is a particularly fun option for groups traveling together. 
+                                There are quite a few amazing Airbnb options around the area.  Search for options in Emporia, Elmdale, Cottonwood Falls and Strong City. This is a particularly fun option for groups traveling together. 
                             </p>
                             <p class="u-margin-bottom-small">
                                 Please let us know where you end up booking and we will work to get you transportation to and from the venue for the ceremony and reception.
@@ -496,15 +496,20 @@
           // Responsive Nav
             const burger = document.querySelector('.nav__burger i');
             const nav = document.querySelector('.nav__side');
-            let width = window.outerWidth;
-            console.log(width)
-            if(width < 1200){
-                console.log('width reached')
-            }
+        
             function toggleNav() {
                 burger.classList.toggle('fa-bars');
                 burger.classList.toggle('fa-times');
                 nav.classList.toggle('nav__active');
+            }
+
+            // Close the side nav if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.nav__burger i')) {
+                    if (nav.classList.contains('nav__active')) {
+                        toggleNav()
+                    }
+                }
             }
 
             burger.addEventListener('click', function () {

@@ -684,9 +684,9 @@
     padding: 1rem 7rem;
     color: #142207;
     text-decoration: none; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .nav__link:link, .nav__link:visited {
-        padding: 1rem 4rem; } }
+        width: 100%; } }
   .nav__link:hover {
     color: #867864; }
   .nav__link__selected {

@@ -34,8 +34,8 @@
       color: $phthalo-green;
       text-decoration: none;
 
-      @include respond(phone) {
-        padding: 1rem 4rem;
+      @include respond(tab-land) {
+        width: 100%;
       }
     }
     &:hover {
